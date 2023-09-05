@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1f1f1f" Offset="0.0"/>
+                <GradientStop Color="#000000" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="horaTextBlock" FontSize="50" Foreground="White" />
+                <TextBlock x:Name="amPmTextBlock" FontSize="20" Foreground="White" VerticalAlignment="Bottom" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
